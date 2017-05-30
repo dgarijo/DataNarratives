@@ -51,7 +51,7 @@
 		  <div id="collapse1" class="panel-collapse collapse">
 			<div class="panel-body">
 			<p> 
-				The <a href="">reaeration empirical method</a> was run on the <a href="">CDEC_2010-03-02</a> dataset, with depth set to 1.021457, velocity set to 0.653112, barpress set to 760, sunrise set to 1267510800 and sunset set to 1267552200. <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionArtifact/METABOLISM_RESULT1464370834054">The metabolism 03-02-2010</a> results are available <a href=" ">online</a>. 
+				The <a href="http://www.opmw.org/export/4.0/page/resource/WorkflowTemplate/WATERFLOW_REAERATION_EMPIRICAL-D751713988987E9331980363E24189CE">reaeration empirical method</a> was run on the <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionArtifact/WATERFLOW_INPUTS1464370834054">CDEC_2010-03-02</a> dataset, with depth set to 1.021457, velocity set to 0.653112, barpress set to 760, sunrise set to 1267510800 and sunset set to 1267552200. <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionArtifact/METABOLISM_RESULT1464370834054">The metabolism 03-02-2010</a> results are available <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionArtifact/METABOLISM_RESULT1464370834054">online</a>. 
 			</p>
 			</div>
 			
@@ -67,7 +67,7 @@
 		  <div id="collapse2" class="panel-collapse collapse">
 			<div class="panel-body">
 			<p> 
-				The <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionArtifact/METABOLISM_RESULT1464370834054">Metabolism 03-02-2010 result</a> was derived from the <a href="">CDEC_2010-03-02</a> dataset.
+				The <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionArtifact/METABOLISM_RESULT1464370834054">Metabolism 03-02-2010 result</a> was derived from the <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionArtifact/WATERFLOW_INPUTS1464370834054">CDEC_2010-03-02</a> dataset.
 			</p>
 			</div>
 			
@@ -86,7 +86,7 @@
 			<div class="panel-body">
 			
 			<p>
-			<a href="">Reaeration empirical</a> performs two main types of analyses in the initial dataset. Fisrt, the <a href="">RaerationEmpirical</a> step compares the Dissolved Oxygen, Temperature, Depth, and Velocity to determine the rate of reaeration, or the K2 value. Then, the <a href="">Metabolism</a> step is executed to produce the target results.
+			<a href="http://www.opmw.org/export/4.0/page/resource/WorkflowTemplate/WATERFLOW_REAERATION_EMPIRICAL-D751713988987E9331980363E24189CE">Reaeration empirical</a> performs two main types of analyses in the initial dataset. First, the <a href="http://www.opmw.org/export/4.0/page/resource/WorkflowTemplateProcess/WATERFLOW_REAERATION_EMPIRICAL-D751713988987E9331980363E24189CE_REAERATIONEMPIRICALNODE">ReaerationEmpirical</a> step compares the Dissolved Oxygen, Temperature, Depth, and Velocity to determine the rate of reaeration, or the K2 value. Then, the <a href="http://www.opmw.org/export/4.0/page/resource/WorkflowTemplateProcess/WATERFLOW_REAERATION_EMPIRICAL-D751713988987E9331980363E24189CE_METABOLISMNODE">Metabolism</a> step is executed to produce the target results.
 			</p>
 			
 			</div>
@@ -103,7 +103,7 @@
 		  <div id="collapse5" class="panel-collapse collapse">
 			<div class="panel-body">
 			<p>
-			The <a href="">Reaeration empirical</a> method has 3 steps. First, the input data is analyzed by <a href="">Waterflow_Hourly_Averages</a>, followed by  <a href="">Raeration_Empirica</a> (using the output from <a href="">Waterflow_Hourly_Averages</a>). The final step is the <a href="">metabolism</a> step, which produced the <a href="">Metabolism_03-02-2010</a> results.
+			The <a href="http://www.opmw.org/export/4.0/page/resource/WorkflowTemplate/WATERFLOW_REAERATION_EMPIRICAL-D751713988987E9331980363E24189CE">Reaeration empirical</a> method has 3 steps. First, the input data is analyzed by <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionProcess/WATERFLOW_HOURLY_AVERAGESNODE1464370834054">Waterflow_Hourly_Averages</a>, followed by  <a href="http://www.opmw.org/export/4.0/page/resource/WorkflowTemplateProcess/WATERFLOW_REAERATION_EMPIRICAL-D751713988987E9331980363E24189CE_REAERATIONEMPIRICALNODE">Reaeration_Empirical</a> (using the output from <a href="">Waterflow_Hourly_Averages</a>). The final step is the <a href="http://www.opmw.org/export/4.0/page/resource/WorkflowTemplateProcess/WATERFLOW_REAERATION_EMPIRICAL-D751713988987E9331980363E24189CE_METABOLISMNODE">Metabolism</a> step, which produced the <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionArtifact/METABOLISM_RESULT1464370834054">Metabolism_03-02-2010</a> results.
 			</p>
 			</div>
 		  </div>
@@ -119,35 +119,35 @@
 			<div class="panel-body">
 			
 			<p>
-			<a href="">Reaeration empirical</a> performs two main types of analyses in the initial dataset. The <a href="">RaerationEmpirical</a> step compares the Dissolved Oxygen, Temperature, Depth, and Velocity to determine the rate of reaeration, or the K2 value.  The relationship between these inputs is determined through regression on past data. Reaeration is the process by which oxygen is absorbed by the stream from the air. The rearation empirical step uses the <a href="">ReaerationCMNode</a> software implementation.
+			The <a href="http://www.opmw.org/export/4.0/page/resource/WorkflowTemplate/WATERFLOW_REAERATION_EMPIRICAL-D751713988987E9331980363E24189CE">Reaeration empirical</a> method has three steps. They are implemented as follows (showing in brackets the general step they implement, if any).  
+			First, the input data is analyzed by <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionProcess/WATERFLOW_HOURLY_AVERAGESNODE1464370834054">Waterflow_Hourly_Averages</a>, followed by  <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionProcess/REAERATIONCMNODE1464370834054">ReaerationCM</a> (implementation of <a href="http://www.opmw.org/export/4.0/page/resource/WorkflowTemplateProcess/WATERFLOW_REAERATION_EMPIRICAL-D751713988987E9331980363E24189CE_REAERATIONEMPIRICALNODE">Reaeration_Empirical</a>). The final step is <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionProcess/METABOLISMDAYNODE1464370834054">Metabolism Day</a> (implementation of <a href="http://www.opmw.org/export/4.0/page/resource/WorkflowTemplateProcess/WATERFLOW_REAERATION_EMPIRICAL-D751713988987E9331980363E24189CE_METABOLISMNODE">Metabolism</a>), which produced the <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionArtifact/METABOLISM_RESULT1464370834054">Metabolism_03-02-2010</a> results.			
 			</p>
-			<p>
-			After applying the <a href="">HourlyAverages</a> step, the <a href="">Metabolism</a> step is executed to produce the target results. The metabolism step uses the <a href="">MetabolismDay</a> software implementation.
-			</p>
-			
 			</div>
 			
 		  </div>
 		</div>
 		
 		
-		<!--
+		
 		<div class="panel panel-primary">
 		  <div class="panel-heading">
 			<h4 class="panel-title">
-			  Data Narrative 6: Software view <a data-toggle="collapse" href="#collapse6">(see more details)</a>
+			  Data Narrative 6: Software view <a data-toggle="collapse" href="#collapse6">(Show more)</a>  <a data-toggle="collapse" href="#collapse6">(Show less)</a>
 			</h4>
 		  </div>
 		  <div id="collapse6" class="panel-collapse collapse">
 			<div class="panel-body">
 			<p>
-			The <a href="http://www.opmw.org/export/4.0/page/resource/WorkflowTemplate/TOPICDETECTION-D751713988987E9331980363E24189CE">TopicDetection</a> method uses two main software components for its functionality. The first one, <a href="">Parallel LDA</a>, is used to implement the <a href="http://www.opmw.org/export/4.0/resource/WorkflowTemplateProcess/TOPICDETECTION-D751713988987E9331980363E24189CE_TRAINTOPICS">TrainTopics</a> and produce the <a href="">output topics</a> dataset. Parallel LDA is a parallel C++ implementation of fast Gibbs sampling of Latent Dirichlet Allocation with Apache License 2.0. 
-			
-			The second software is <a href="">Termite</a>, which implements the <a href="">Plot topics</a> step to create the <a href="">term-topic matrix visualization</a>. Termite (Termite: Visualization Techniques for Assessing Textual Topic Models) has a Copyright (c) 2013, Leland Stanford Junior University.
+			The <a href="http://www.opmw.org/export/4.0/page/resource/WorkflowTemplate/WATERFLOW_REAERATION_EMPIRICAL-D751713988987E9331980363E24189CE">Reaeration empirical</a> method has three steps.	First, the input data is analyzed by <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionProcess/WATERFLOW_HOURLY_AVERAGESNODE1464370834054">Waterflow_Hourly_Averages</a>, followed by  <a href="">ReaerationCM</a>. The final step is the <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionProcess/METABOLISMDAYNODE1464370834054">MetabolismDay</a>, which produced the <a href="http://www.opmw.org/export/4.0/resource/WorkflowExecutionArtifact/METABOLISM_RESULT1464370834054">Metabolism_03-02-2010</a> results.			
+			</p>
+			<p>
+			ReaerationCM uses a <a href="http://www.opmw.org/uploads/Waterflow_Reaera-8147adfc-0794-4163-8e3c-d27be347f16d/code/ReaerationCM/run">bash script</a> to perform its functionality. <br/>
+			Waterflow_Hourly_Averages uses a <a href="http://www.opmw.org/uploads/Waterflow_Reaera-8147adfc-0794-4163-8e3c-d27be347f16d/code/Waterflow_Hourly_Averages/run">bash script</a> to perform its functionality. The software is licensed under a <a href="http://ontosoft.org/software#GPLv3">GPLv3 license</a>. <br/>
+			Metabolism Day uses a <a href="http://www.opmw.org/uploads/Waterflow_Reaera-8147adfc-0794-4163-8e3c-d27be347f16d/code/MetabolismDay/run">bash script</a> to perform its functionality.The software is licensed under a <a href="http://ontosoft.org/software#GPLv3">GPLv3 license</a>. <br/>
 			</p>
 			</div>
 		  </div>
-		</div><!-- -->
+		</div>
 		
 	  </div>
 	</div>
